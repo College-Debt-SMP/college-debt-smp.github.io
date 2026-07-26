@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="max-image-preview:large">
-	<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}College Debt SMP</title>
+	<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}College Debt SMP serversite</title>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="alternate" type="application/rss+xml" title="College Debt SMP serversite &raquo; Feed" href="/feed/">
 	<link rel="alternate" type="application/rss+xml" title="College Debt SMP serversite &raquo; Comments Feed" href="/comments/feed/">
 	<link rel="stylesheet" id="wp-block-navigation-css" href="/wp-includes/blocks/navigation/style.min.css?ver=6.7.1" media="all">
@@ -27,6 +28,7 @@
 	<link rel="icon" href="/assets/images/cropped-Oak_Sign_JE3-32x32.webp" sizes="32x32">
 	<link rel="icon" href="/assets/images/cropped-Oak_Sign_JE3-192x192.webp" sizes="192x192">
 	<link rel="apple-touch-icon" href="/assets/images/cropped-Oak_Sign_JE3-180x180.webp">
+	<meta name="msapplication-TileImage" content="/assets/images/cropped-Oak_Sign_JE3-270x270.webp">
 </head>
 
 <body class="post-template-default single single-post wp-custom-logo wp-embed-responsive">
@@ -34,7 +36,7 @@
 {% include header.html %}
 
 <main class="wp-block-group alignfull is-layout-flow wp-block-group-is-layout-flow" style="padding-right:0;padding-left:0">
-<div class="wp-block-group has-global-padding is-layout-constrained" style="margin-bottom:var(--wp--preset--spacing--30);padding-top:0">
+<div class="wp-block-group has-global-padding is-layout-constrained post-layout-container" style="margin-bottom:var(--wp--preset--spacing--30);padding-top:0">
 
 {% if page.featured_image %}
 <figure style="margin-bottom:var(--wp--preset--spacing--40);" class="wp-block-post-featured-image">
@@ -47,12 +49,12 @@
 
 <div class="wp-block-template-part">
 <div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-<div class="wp-block-group is-content-justification-left is-layout-flex site-header-nav-container">
+<div class="wp-block-group is-content-justification-left is-layout-flex post-meta-row">
 <div class="wp-block-post-date"><time>{% if page.date %}{{ page.date | date: "%b %-d, %Y" }}{% endif %}</time></div>
 
-<p class="has-contrast-2-color has-text-color">&#8211;</p>
+<p class="has-contrast-2-color has-text-color" style="margin:0;">&#8211;</p>
 
-<p class="has-contrast-2-color has-text-color has-small-font-size">by</p>
+<p class="has-contrast-2-color has-text-color has-small-font-size" style="margin:0;">by</p>
 
 <div class="wp-block-post-author-name"><a href="/author/{{ page.author | default: 'cherryquartzio' | slugify }}/" class="wp-block-post-author-name__link">{{ page.author | default: "CherryQuartzio" }}</a></div>
 
@@ -67,15 +69,15 @@
 </div>
 </div>
 
-<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained" style="max-width:800px;margin-left:auto;margin-right:auto;">
+<div class="entry-content alignfull wp-block-post-content has-global-padding is-layout-constrained post-layout-container">
 {{ content }}
 </div>
 
-<div class="wp-block-group has-global-padding is-layout-constrained" style="margin-top:var(--wp--preset--spacing--30);padding-bottom:0">
-<div class="wp-block-group has-global-padding is-layout-constrained" style="max-width:800px;margin-left:auto;margin-right:auto;">
+<div class="wp-block-group has-global-padding is-layout-constrained post-layout-container" style="margin-top:var(--wp--preset--spacing--30);padding-bottom:0">
+<div class="wp-block-group has-global-padding is-layout-constrained">
 <hr class="wp-block-separator has-text-color has-contrast-3-color has-alpha-channel-opacity has-contrast-3-background-color has-background is-style-wide" style="margin-bottom:var(--wp--preset--spacing--20)">
 
-<nav aria-label="Posts" class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex site-header-row" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)">
+<nav aria-label="Posts" class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex post-navigation-row" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)">
 <div class="post-navigation-link-previous wp-block-post-navigation-link">
 {% if page.previous %}
 <span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true">←</span><a href="{{ page.previous.url }}" rel="prev"><span class="post-navigation-link__label">Previous: </span> <span class="post-navigation-link__title">{{ page.previous.title }}</span></a>
