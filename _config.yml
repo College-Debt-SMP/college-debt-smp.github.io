@@ -3,3 +3,5 @@ description: All about the College Debt SMP server!
 permalink: /:year/:month/:day/:title/
 exclude:
   - README.md
+plugins:
+  - jekyll-feed
