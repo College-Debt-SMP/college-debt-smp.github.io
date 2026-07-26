@@ -13,7 +13,7 @@ html, body {
 /* Ensure main content area fills screen minus header height so footer sits below the fold */
 main,
 .wp-site-blocks > main {
-  min-height: calc(100vh - 63px);
+  min-height: calc(100vh - 83px);
   box-sizing: border-box;
 }
 
@@ -58,7 +58,7 @@ header.wp-block-template-part {
 /* Mobile Navigation Overlay Adjustments */
 .wp-block-navigation__responsive-container-close {
   position: fixed !important;
-  top: 19.5px !important;
+  top: 29.5px !important;
   right: var(--wp--preset--spacing--40) !important;
   margin: 0 !important;
   padding: 0 !important;
