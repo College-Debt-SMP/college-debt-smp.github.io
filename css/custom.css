@@ -3,8 +3,6 @@
 html, body {
   min-height: 100vh;
   margin: 0;
-  background-color: var(--wp--preset--color--base, #f0efed);
-  color: var(--wp--preset--color--contrast, #111111);
 }
 
 /* Flexbox container for full height sticky footer */
@@ -23,15 +21,26 @@ header.wp-block-template-part {
   margin-top: 0 !important;
 }
 
+/* Sticky Footer: Push footer to bottom when page content is short */
+.site-footer-wrapper {
+  margin-top: auto !important;
+}
+
+/* Arrow indicator for navigation links (e.g. Discord ↗, YouTube Playlist ↗) */
+.is-style-arrow-link .wp-block-navigation-item__label:after {
+  content: "\2197" !important;
+  padding-inline-start: 0.25rem !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
+
 /* Responsive Header layout overrides */
 .site-header-row {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 .site-header-nav-container {
   display: flex !important;
@@ -44,224 +53,32 @@ header.wp-block-template-part {
   gap: var(--wp--preset--spacing--20, 1.5rem) !important;
 }
 
-/* ==========================================================================
-   FOOTER STYLING (Matching WP Twenty Twenty-Four 1280px alignwide container)
-   ========================================================================== */
-
-.site-footer-wrapper {
-  margin-top: auto !important;
-  width: 100% !important;
-}
-
+/* Responsive Footer layout overrides */
 .site-footer-group {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   padding-top: 30px !important;
-  padding-right: var(--wp--preset--spacing--50, 2rem) !important;
+  padding-right: var(--wp--preset--spacing--50) !important;
   padding-bottom: 30px !important;
-  padding-left: var(--wp--preset--spacing--50, 2rem) !important;
-  background-color: var(--wp--preset--color--base-2, #ffffff) !important;
+  padding-left: var(--wp--preset--spacing--50) !important;
 }
-
 .site-footer-row {
-  max-width: 1280px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
   flex-wrap: wrap !important;
-  gap: 1.5rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
 }
-
 .site-footer-col-left {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
   gap: var(--wp--preset--spacing--10, 1rem) !important;
 }
-
 .site-footer-col-right {
   display: flex !important;
   flex-direction: column !important;
   align-items: flex-start !important;
-}
-
-.site-footer-group ul {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  gap: 1.5rem !important;
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.site-footer-group ul li {
-  margin: 0 !important;
-}
-
-.site-footer-group ul li a {
-  text-decoration: none !important;
-  color: var(--wp--preset--color--contrast, #111111) !important;
-}
-
-.site-footer-group ul li a:hover {
-  text-decoration: underline !important;
-}
-
-/* Arrow indicator for navigation links (e.g. Discord ↗, YouTube Playlist ↗) */
-.is-style-arrow-link .wp-block-navigation-item__label:after {
-  content: "\2197" !important;
-  padding-inline-start: 0.25rem !important;
-  vertical-align: middle !important;
-  text-decoration: none !important;
-  display: inline-block !important;
-}
-
-/* ==========================================================================
-   BLOG POST PAGE STYLING (Matching WP Twenty Twenty-Four Layout Model)
-   ========================================================================== */
-
-/* Outer Post Container: Full width, no extra padding at top */
-.post-page-container {
-  width: 100% !important;
-  display: block !important;
-  padding-top: 0 !important;
-  padding-bottom: 2rem !important;
-}
-
-/* 1. Featured Banner Image (Wide 1280px) */
-.post-featured-image {
-  max-width: 1280px !important;
-  width: 100% !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 0 !important;
-  margin-bottom: var(--wp--preset--spacing--30, 2rem) !important;
-  padding-left: var(--wp--preset--spacing--50, 1.5rem) !important;
-  padding-right: var(--wp--preset--spacing--50, 1.5rem) !important;
-  box-sizing: border-box !important;
-}
-
-.post-featured-image img {
-  width: 100% !important;
-  height: auto !important;
-  max-height: 600px !important;
-  border-radius: 8px !important;
-  object-fit: cover !important;
-  display: block !important;
-}
-
-/* 2. Post Title & Meta (Contrained 620px) */
-.post-header-section {
-  max-width: 620px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 100% !important;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  box-sizing: border-box !important;
-  margin-bottom: var(--wp--preset--spacing--30, 2rem) !important;
-}
-
-.post-header-section h1 {
-  font-family: var(--wp--preset--font-family--minecraft, Minecraft), sans-serif !important;
-  font-size: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem) !important;
-  line-height: 1.2 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0.5rem !important;
-  color: var(--wp--preset--color--contrast, #111111) !important;
-}
-
-.post-meta-line {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-  gap: 0.4rem !important;
-  font-size: var(--wp--preset--font-size--small, 0.9rem) !important;
-  color: var(--wp--preset--color--contrast-2, #636363) !important;
-}
-
-.post-meta-line a {
-  color: var(--wp--preset--color--contrast, #111111) !important;
-  text-decoration: underline !important;
-}
-
-/* 3. Entry Content Body (Contrained 620px) */
-.post-body-content {
-  max-width: 620px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 100% !important;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  box-sizing: border-box !important;
-  line-height: 1.65 !important;
-  font-size: 1.05rem !important;
-  color: var(--wp--preset--color--contrast, #111111) !important;
-}
-
-.post-body-content p {
-  margin-top: 0 !important;
-  margin-bottom: 1.5rem !important;
-  line-height: 1.65 !important;
-}
-
-.post-body-content ul {
-  margin-top: 0 !important;
-  margin-bottom: 1.5rem !important;
-  padding-left: 1.5rem !important;
-  list-style-type: disc !important;
-}
-
-.post-body-content li {
-  margin-bottom: 0.5rem !important;
-}
-
-.post-body-content figure {
-  margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
-  display: block !important;
-}
-
-.post-body-content figure img {
-  max-width: 100% !important;
-  height: auto !important;
-  border-radius: 8px !important;
-  display: block !important;
-}
-
-.post-body-content figcaption {
-  margin-top: 0.5rem !important;
-  font-size: 0.85rem !important;
-  color: var(--wp--preset--color--contrast-2, #636363) !important;
-  text-align: left !important;
-}
-
-/* 4. Post Navigation (Contrained 620px) */
-.post-navigation-bar {
-  max-width: 620px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  width: 100% !important;
-  padding-left: 1.5rem !important;
-  padding-right: 1.5rem !important;
-  box-sizing: border-box !important;
-  margin-top: 3rem !important;
-  margin-bottom: 3rem !important;
-  padding-top: 1.5rem !important;
-  border-top: 1px solid var(--wp--preset--color--contrast-3, #A4A4A4) !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  flex-wrap: wrap !important;
-  gap: 1rem !important;
-}
-
-.post-navigation-bar a {
-  font-weight: 500 !important;
-  color: var(--wp--preset--color--contrast, #111111) !important;
-  text-decoration: underline !important;
 }
