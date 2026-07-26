@@ -135,8 +135,19 @@ h1, h2,
 .site-header-nav .wp-block-navigation-item a,
 .site-header-nav .wp-block-navigation-item__content,
 .site-header-nav .wp-block-navigation-item__label {
-  font-size: 1.3rem !important;
+  font-size: 20px !important;
   line-height: 1.2 !important;
+  text-decoration: none !important;
+}
+
+.site-header-nav a:hover,
+.site-header-nav a:focus,
+.site-header-nav .wp-block-navigation-item a:hover,
+.site-header-nav .wp-block-navigation-item__content:hover,
+.site-header-nav .wp-block-navigation-item__label:hover {
+  text-decoration: none !important;
+  opacity: 0.7 !important;
+  transition: opacity 0.15s ease;
 }
 
 h3, h4, h5, h6 {
