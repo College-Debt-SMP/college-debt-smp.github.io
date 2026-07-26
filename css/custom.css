@@ -118,19 +118,41 @@ header.wp-block-template-part {
   font-display: swap;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cardo', Georgia, serif;
+h1, h2,
+.has-minecraft-font-family,
+.has-minecraft-font-family * {
+  font-family: 'Minecraft', monospace !important;
 }
 
-.has-minecraft-font-family,
-.has-minecraft-font-family *,
-h1.has-minecraft-font-family,
-h2.has-minecraft-font-family,
-h3.has-minecraft-font-family {
-  font-family: 'Minecraft', monospace !important;
+h3, h4, h5, h6 {
+  font-family: var(--wp--preset--font-family--body, 'Inter', sans-serif);
 }
 
 .has-heading-font-family,
 .has-heading-font-family * {
   font-family: 'Cardo', Georgia, serif !important;
+}
+
+/* Default Figure, Image, and Figcaption Styling */
+figure {
+  margin: 1.5em 0;
+}
+
+figure img,
+figure iframe {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+figure iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+figcaption {
+  font-size: 0.8rem;
+  color: var(--wp--preset--color--contrast-2);
+  margin-top: 0.5em;
 }
