@@ -4,7 +4,7 @@ title: "Your Post Title Here"
 date: 2026-07-26
 author: CherryQuartzio
 category: News
-featured_image: /wp-content/uploads/2024/08/beyond-vanilla.png
+featured_image: /assets/images/beyond-vanilla.png
 excerpt: "A short one or two sentence summary of your post."
 ---
 
