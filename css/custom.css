@@ -130,6 +130,15 @@ h1, h2,
   text-rendering: geometricPrecision !important;
 }
 
+.site-header-nav,
+.site-header-nav .wp-block-navigation-item,
+.site-header-nav .wp-block-navigation-item a,
+.site-header-nav .wp-block-navigation-item__content,
+.site-header-nav .wp-block-navigation-item__label {
+  font-size: 1.3rem !important;
+  line-height: 1.2 !important;
+}
+
 h3, h4, h5, h6 {
   font-family: var(--wp--preset--font-family--body, 'Inter', sans-serif);
 }
@@ -268,14 +277,16 @@ footer.site-footer-group {
   line-height: 1;
 }
 
-/* Post List Item Spacing Adjustments */
+/* Post List Item Fixed Spacing & Title Font Size (No viewport scaling) */
 .wp-block-post-template .wp-block-columns {
-  margin-top: var(--wp--preset--spacing--20) !important;
-  margin-bottom: var(--wp--preset--spacing--20) !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
   column-gap: 2em !important;
   row-gap: 0.4em !important;
 }
 
-.wp-block-post-template .wp-block-post-title {
+.wp-block-post-template .wp-block-post-title,
+.wp-block-post-template .wp-block-post-title a {
+  font-size: 1.15rem !important;
   margin: 0 !important;
 }
