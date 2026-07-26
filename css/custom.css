@@ -57,9 +57,12 @@ header.wp-block-template-part {
 
 /* Mobile Navigation Overlay Adjustments */
 .wp-block-navigation__responsive-container-close {
-  position: absolute !important;
-  top: 19px !important;
+  position: fixed !important;
+  top: 19.5px !important;
   right: var(--wp--preset--spacing--40) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 100001 !important;
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item,
