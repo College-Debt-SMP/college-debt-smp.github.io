@@ -26,6 +26,15 @@ header.wp-block-template-part {
   margin-top: auto !important;
 }
 
+/* Arrow indicator for navigation links (e.g. Discord ↗, YouTube Playlist ↗) */
+.is-style-arrow-link .wp-block-navigation-item__label:after {
+  content: "\2197" !important;
+  padding-inline-start: 0.25rem !important;
+  vertical-align: middle !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+}
+
 /* Responsive Header layout overrides */
 .site-header-row {
   display: flex !important;
@@ -64,6 +73,13 @@ header.wp-block-template-part {
 }
 .site-footer-group ul li {
   margin: 0 !important;
+}
+.site-footer-group ul li a {
+  text-decoration: none !important;
+  color: var(--wp--preset--color--contrast, #111111) !important;
+}
+.site-footer-group ul li a:hover {
+  text-decoration: underline !important;
 }
 .site-footer-row {
   display: flex !important;
