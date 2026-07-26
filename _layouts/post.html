@@ -47,13 +47,13 @@ layout: default
 <nav aria-label="Posts" class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex post-navigation-row wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--20)">
 <div class="post-navigation-link-previous post-navigation-link wp-block-post-navigation-link">
 {% if page.previous %}
-<span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true">←</span><a href="{{ page.previous.url }}" rel="prev"><span class="post-navigation-link__label">Previous: </span> <span class="post-navigation-link__title">{{ page.previous.title }}</span></a>
+<a href="{{ page.previous.url }}" rel="prev" style="text-decoration: none;"><span class="wp-block-post-navigation-link__arrow-previous is-arrow-arrow" aria-hidden="true" style="margin-right: 0.5em;">←</span><span class="post-navigation-link__label">Previous: </span> <span class="post-navigation-link__title">{{ page.previous.title }}</span></a>
 {% endif %}
 </div>
 
 <div class="post-navigation-link-next post-navigation-link wp-block-post-navigation-link">
 {% if page.next %}
-<a href="{{ page.next.url }}" rel="next"><span class="post-navigation-link__label">Next: </span> <span class="post-navigation-link__title">{{ page.next.title }}</span></a><span class="wp-block-post-navigation-link__arrow-next is-arrow-arrow" aria-hidden="true">→</span>
+<a href="{{ page.next.url }}" rel="next" style="text-decoration: none;"><span class="post-navigation-link__label">Next: </span> <span class="post-navigation-link__title">{{ page.next.title }}</span><span class="wp-block-post-navigation-link__arrow-next is-arrow-arrow" aria-hidden="true" style="margin-left: 0.5em;">→</span></a>
 {% endif %}
 </div>
 </nav>
