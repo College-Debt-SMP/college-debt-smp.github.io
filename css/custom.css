@@ -21,10 +21,25 @@ header.wp-block-template-part {
   margin-top: 0 !important;
 }
 
-/* Sticky Footer: Push footer to bottom when page content is short */
+/* Header Layout classes (replacing dynamically generated wp-container-core-* classes) */
+.site-header-nav-wrapper { justify-content: flex-start; }
+.site-header-nav { gap: var(--wp--preset--spacing--20); justify-content: flex-end; }
+.site-header-row { justify-content: space-between; }
+.site-header-group > .alignfull { margin-right: calc(var(--wp--preset--spacing--50) * -1); margin-left: calc(var(--wp--preset--spacing--50) * -1); }
+
+/* Footer Layout classes (replacing dynamically generated wp-container-core-* classes) */
 .site-footer-wrapper {
   margin-top: auto !important;
 }
+.site-footer-group > .alignfull { margin-right: calc(var(--wp--preset--spacing--50) * -1); margin-left: calc(var(--wp--preset--spacing--50) * -1); }
+.site-footer-row { justify-content: space-between; }
+.site-footer-col-left { gap: var(--wp--preset--spacing--10); flex-direction: column; align-items: flex-start; }
+.site-footer-col-right { flex-direction: column; align-items: flex-start; }
+.site-footer-nav { justify-content: flex-end; }
+
+/* Post Layout classes */
+.post-navigation-row { flex-wrap: nowrap; justify-content: space-between; align-items: center; }
+.post-navigation-link { display: flex; align-items: center; }
 
 /* Arrow indicator for navigation links (e.g. Discord ↗, YouTube Playlist ↗) */
 .is-style-arrow-link .wp-block-navigation-item__label:after {
