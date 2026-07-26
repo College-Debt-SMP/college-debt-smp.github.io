@@ -49,3 +49,15 @@ header.wp-block-template-part {
   text-decoration: none !important;
   display: inline-block !important;
 }
+
+/* Remove underlines on hover for post titles and meta info */
+.wp-block-post-title a:hover,
+.wp-block-post-title a:focus,
+.wp-block-post-date a:hover,
+.wp-block-post-date a:focus,
+.wp-block-post-author-name__link:hover,
+.wp-block-post-author-name__link:focus,
+.wp-block-post-terms a:hover,
+.wp-block-post-terms a:focus {
+  text-decoration: none !important;
+}
