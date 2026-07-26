@@ -120,8 +120,14 @@ header.wp-block-template-part {
 
 h1, h2,
 .has-minecraft-font-family,
-.has-minecraft-font-family * {
+.has-minecraft-font-family *,
+.site-header-nav,
+.site-header-nav * {
   font-family: 'Minecraft', monospace !important;
+  -webkit-font-smoothing: none !important;
+  -moz-osx-font-smoothing: unset !important;
+  font-smooth: never !important;
+  text-rendering: geometricPrecision !important;
 }
 
 h3, h4, h5, h6 {
@@ -138,6 +144,7 @@ figure {
   margin: 1.5em 0;
 }
 
+.wp-block-image img,
 figure img,
 figure iframe {
   border-radius: 8px;
