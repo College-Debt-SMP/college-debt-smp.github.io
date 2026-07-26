@@ -1,5 +1,5 @@
 title: College Debt SMP
 description: All about the College Debt SMP server!
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 exclude:
   - README.md
