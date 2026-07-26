@@ -5,11 +5,16 @@ html, body {
   margin: 0;
 }
 
-/* Flexbox container for full height sticky footer */
 .wp-site-blocks {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Ensure main content area fills screen minus header height so footer sits below the fold */
+main,
+.wp-site-blocks > main {
+  min-height: calc(100vh - 63px);
+  box-sizing: border-box;
 }
 
 /* Remove unwanted top margin/spacing above header */
@@ -29,7 +34,7 @@ header.wp-block-template-part {
 
 /* Footer Layout classes (replacing dynamically generated wp-container-core-* classes) */
 .site-footer-wrapper {
-  margin-top: auto !important;
+  /* Removed margin-top: auto to allow footer to stay below fold on short pages */
 }
 .site-footer-group > .alignfull { margin-right: calc(var(--wp--preset--spacing--50) * -1); margin-left: calc(var(--wp--preset--spacing--50) * -1); }
 .site-footer-row { justify-content: space-between; }
