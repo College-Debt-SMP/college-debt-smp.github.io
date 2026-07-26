@@ -1926,11 +1926,34 @@
 	<link rel="https://api.w.org/" href="/wp-json/">
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
 	<meta name="generator" content="WordPress 6.7.1">
-	<script type="importmap"
-		id="wp-importmap">{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=06b8f695ef48ab2d9277"}}</script>
-	<script type="module" src="/assets/wp-assets/view.min.js"
-		id="@wordpress/block-library/navigation/view-js-module"></script>
-	<link rel="modulepreload" href="/assets/wp-assets/index.min.js" id="@wordpress/interactivity-js-modulepreload">
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			var openBtn = document.querySelector('.wp-block-navigation__responsive-container-open');
+			var closeBtn = document.querySelector('.wp-block-navigation__responsive-container-close');
+			var modal = document.querySelector('.wp-block-navigation__responsive-container');
+
+			if (openBtn && modal) {
+				openBtn.addEventListener('click', function () {
+					modal.classList.add('is-menu-open');
+					document.documentElement.classList.add('has-modal-open');
+				});
+			}
+
+			if (closeBtn && modal) {
+				closeBtn.addEventListener('click', function () {
+					modal.classList.remove('is-menu-open');
+					document.documentElement.classList.remove('has-modal-open');
+				});
+			}
+
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape' && modal && modal.classList.contains('is-menu-open')) {
+					modal.classList.remove('is-menu-open');
+					document.documentElement.classList.remove('has-modal-open');
+				}
+			});
+		});
+	</script>
 	<style class="wp-fonts-local">
 		@font-face {
 			font-family: Inter;
