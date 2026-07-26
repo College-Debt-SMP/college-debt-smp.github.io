@@ -267,3 +267,15 @@ footer.site-footer-group {
   font-weight: 500;
   line-height: 1;
 }
+
+/* Post List Item Spacing Adjustments */
+.wp-block-post-template .wp-block-columns {
+  margin-top: var(--wp--preset--spacing--20) !important;
+  margin-bottom: var(--wp--preset--spacing--20) !important;
+  column-gap: 2em !important;
+  row-gap: 0.4em !important;
+}
+
+.wp-block-post-template .wp-block-post-title {
+  margin: 0 !important;
+}
