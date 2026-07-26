@@ -168,10 +168,15 @@ figcaption {
 .home-hero-section {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
   padding-left: var(--wp--preset--spacing--40) !important;
   padding-right: var(--wp--preset--spacing--40) !important;
+}
+
+.home-hero-image {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
 }
 
 .home-hero-title {
