@@ -214,6 +214,18 @@ figcaption {
   width: 100% !important;
 }
 
+.site-footer-col-right {
+  align-items: flex-end !important;
+  text-align: right !important;
+}
+
+.site-footer-col-right figure,
+.site-footer-col-right a,
+.site-footer-col-right img {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
 .home-callout-box .wp-block-buttons {
   display: flex !important;
   justify-content: center !important;
@@ -238,6 +250,14 @@ figcaption {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   padding: 60px var(--wp--preset--spacing--40) !important;
+}
+
+.site-footer-wrapper,
+.site-footer-group,
+footer.site-footer-wrapper,
+footer.site-footer-group {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .home-posts-heading {
