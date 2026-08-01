@@ -45,7 +45,7 @@ I'm aware that the server can get quite sluggish trying to load chunks on faster
 
 As an added bonus, it allows you to see further with much less performance impact by employing the same technique seeing in modern open world video games.
 
-### Custom paintings
+### Bring your own paintings
 
 You can now take any digital images you have and bring it into the server as a Minecraft painting. [The process](https://wiki.collegedebt.app/college-debt-smp/modded-features/custom-paintings) involves creating a custom painting resource pack with those images before uploading it to the server automatically via an automated system. You can make it high definition like the original image or have it be more pixelated like the one in the game.
 
