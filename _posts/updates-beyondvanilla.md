@@ -3,7 +3,7 @@ layout: post
 title: "Beyond Vanilla experimental update"
 date: 2024-08-06
 author: CherryQuartzio
-category: News
+category: Updates
 featured_image: /assets/images/beyond-vanilla.png
 ---
 
