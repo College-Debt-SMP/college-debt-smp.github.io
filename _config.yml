@@ -1,6 +1,6 @@
 title: College Debt SMP
 description: All about the College Debt SMP server!
-permalink: /:category/:title/
+permalink: /:categories/:title/
 exclude:
   - README.md
 plugins:
