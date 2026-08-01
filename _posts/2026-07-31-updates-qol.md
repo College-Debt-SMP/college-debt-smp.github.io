@@ -65,4 +65,4 @@ To make the process of using mods on the server more simple, I've decided to pub
 
 In a nutshell, it's a fork of Fabulously Optimized with all the server multiplayer stuff sprinkled in, and I've decided to call it **Together Optimized**. You can grab the latest release from [GitHub](https://github.com/College-Debt-SMP/together-optimized/releases) or from [Modrinth](https://modrinth.com/modpack/together-optimized). Installation process is the same as any other modpack.
 
-As always, using this modpack or any other similar modpacks is not required for playing on the server besides adding more vibes to the server.
+Using this modpack or any other similar modpacks is not required for playing on the server besides adding more vibes to the server.
