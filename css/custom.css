@@ -309,3 +309,45 @@ footer.site-footer-group {
   font-size: 1.15rem !important;
   margin: 0 !important;
 }
+
+/* Heading Vertical Margins for Clear Content Hierarchy */
+.entry-content h1,
+.wp-block-post-content h1 {
+  margin-top: 2.25em !important;
+  margin-bottom: 0.8em !important;
+}
+
+.entry-content h2,
+.wp-block-post-content h2 {
+  margin-top: 2em !important;
+  margin-bottom: 0.75em !important;
+}
+
+.entry-content h3,
+.wp-block-post-content h3 {
+  margin-top: 1.75em !important;
+  margin-bottom: 0.6em !important;
+}
+
+.entry-content h4,
+.wp-block-post-content h4 {
+  margin-top: 1.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.entry-content h5,
+.wp-block-post-content h5 {
+  margin-top: 1.25em !important;
+  margin-bottom: 0.4em !important;
+}
+
+.entry-content h6,
+.wp-block-post-content h6 {
+  margin-top: 1em !important;
+  margin-bottom: 0.4em !important;
+}
+
+.entry-content > *:first-child,
+.wp-block-post-content > *:first-child {
+  margin-top: 0 !important;
+}

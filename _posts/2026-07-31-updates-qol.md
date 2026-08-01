@@ -43,7 +43,7 @@ I've reintroduced the Portfolio mod, which adds more paintings to the game from 
 
 I'm aware that the server can get quite sluggish trying to load chunks on faster speed without the risk of hitting an invisible wall. I unfortunately can't improve it without switching to either [Pumpkin MC](https://pumpkinmc.org/) (not stable) or switch to a faster server (too broke). The best remedy available is to add [level of detail](https://en.wikipedia.org/wiki/Level_of_detail_(computer_graphics)) (LOD) to the server. By installing [Voxy](https://modrinth.com/mod/voxy), you can see at greater rendering distance including chunks the server has not loaded yet.
 
-As an added bonus, it allows you to see further with much less performance impact by employing the same technique seeing in modern open world video games.
+As an added bonus, it allows you to see further with much less performance impact by employing the same technique seeing in modern open-world video games.
 
 ### Bring your own paintings
 
